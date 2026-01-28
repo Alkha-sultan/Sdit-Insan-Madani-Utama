@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Masjid & Lapangan Sekolah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            padding-bottom: 50px;
+        }
+
+        /* Bagian Atas / Header */
+        .hero-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, #e8f5e9, #f8fafc);
+        }
+
+        .hero-section h1 {
+            font-size: 3em;
+            color: #1b5e20;
+            margin-bottom: 10px;
+        }
+
+        /* Container Foto Berjejer 2 Besar */
+        .main-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .feature-card {
+            flex: 1 1 calc(50% - 25px); /* Bagi 2 kolom besar */
+            min-width: 350px;
+            height: 600px; /* Ukuran sangat besar */
+            position: relative;
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            transition: transform 0.4s ease;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.02);
+        }
+
+        .feature-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Label Estetik di Pojok */
+        .badge {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 800;
+            color: #1b5e20;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        /* Deskripsi di bawah foto */
+        .info-box {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 40px 30px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+        }
+
+        .info-box h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 900px) {
+            .feature-card {
+                flex: 1 1 100%;
+                height: 450px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-section">
+        <h1>Fasilitas Sekolah Kita</h1>
+        <p>Kombinasi antara Ibadah dan Olahraga</p>
+    </div>
+
+    <div class="main-gallery">
+        
+        <div class="feature-card">
+            <div class="badge">Religius</div>
+            <img src="rumah allah.png" alt="Masjid Sekolah">
+            <div class="info-box">
+                <h2>Masjid Sekolah</h2>
+                <p>Tempat yang tenang untuk ibadah dan menenangkan hati.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="badge">Sportif</div>
+            <img src="lapangan.png" alt="Lapangan Sekolah">
+            <div class="info-box">
+                <h2>Lapangan Utama</h2>
+                <p>Tempat mengasah bakat dan kesehatan jasmani.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

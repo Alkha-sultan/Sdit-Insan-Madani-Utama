@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Masjid Sekolah - Besar & Megah</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 40px 10px;
+        }
+
+        .title-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .title-section h1 {
+            color: #1b5e20;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Container Grid yang sangat lebar */
+        .big-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 Foto berjejer */
+            gap: 30px; /* Jarak lebih lebar antar foto */
+            max-width: 1200px; /* Ukuran container lebih besar */
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            transition: all 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-15px); /* Melayang lebih tinggi pas di-hover */
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        /* Foto dibuat sangat besar */
+        .card img {
+            width: 100%;
+            height: 500px; /* Tinggi foto yang sangat besar */
+            object-fit: cover;
+            display: block;
+        }
+
+        .label {
+            padding: 25px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            border-top: 5px solid #2e7d32;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 800px) {
+            .big-grid {
+                grid-template-columns: 1fr;
+            }
+            .card img {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title-section">
+        <h1>Profil ruang sekolah🎓</h1>
+        <p>Tempat Menuntut Ilmu</p>
+    </div>
+
+    <div class="big-grid">
+        
+        <div class="card">
+            <img src="lah2.png" alt="Masjid Besar 1">
+            <div class="label"></div>
+        </div>
+
+        <div class="card">
+            <img src="lah.png" alt="Masjid Besar 2">
+            <div class="label"></div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

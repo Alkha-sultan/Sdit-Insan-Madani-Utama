@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Masjid Estetik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: #fdfdfd;
+            color: #2d3436;
+            padding: 50px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            letter-spacing: -1px;
+            color: #1b5e20;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #636e72;
+            font-size: 1.1em;
+        }
+
+        /* Grid Estetik */
+        .aesthetic-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Tetap 2 kolom besar */
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .item {
+            position: relative;
+            border-radius: 30px; /* Sudut sangat bulat, ciri khas desain estetik */
+            overflow: hidden;
+            height: 550px; /* Sangat besar dan tinggi */
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.9); /* Sedikit gelap biar teks terbaca */
+            transition: 0.5s;
+        }
+
+        .item:hover img {
+            filter: brightness(1);
+        }
+
+        /* Overlay teks yang estetik (Glassmorphism) */
+        .overlay {
+            position: absolute;
+            bottom: 25px;
+            left: 25px;
+            right: 25px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.15); /* Transparan */
+            backdrop-filter: blur(15px); /* Efek Blur seperti kaca */
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            text-align: center;
+        }
+
+        .overlay h3 {
+            font-size: 1.4em;
+            margin: 0;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* Responsif HP */
+        @media (max-width: 768px) {
+            .aesthetic-grid {
+                grid-template-columns: 1fr;
+            }
+            .item {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Oase Spiritual</h1>
+        <p>Profil Visual Masjid Sekolah Kita</p>
+    </div>
+
+    <div class="aesthetic-grid">
+        
+        <div class="item">
+            <img src="rumah allah.png" alt="Masjid 1">
+            <div class="overlay">
+                <h3></h3>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="bagian awal rumah allah.png" alt="Masjid 2">
+            <div class="overlay">
+                <h3></h3>
+            </div>
+        </div>
+
+    </div>
+>
+
+</body>
+</html>
