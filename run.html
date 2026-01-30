@@ -1,40 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kegiatan Sekolah Adelard</title>
     <style>
-        body {
-            background-color: #e0e0e0;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; }
+        header { background-color: #2e7d32; color: white; padding: 20px; text-align: center; }
+        .container { width: 90%; max-width: 800px; margin: auto; padding: 20px; }
+        
+        /* Gaya untuk kotak kegiatan */
+        .activity-card { 
+            background: white; 
+            margin-bottom: 30px; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            text-align: center;
         }
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr; /* Membuat 2 kolom ke samping */
-            gap: 15px; /* Jarak antar gambar */
-            width: 90%;
-            max-width: 1200px;
+        
+        /* Gaya untuk gambar */
+        .activity-card img { 
+            width: 100%; 
+            height: auto; 
+            display: block;
         }
-        .grid-container img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        
+        /* Gaya untuk tulisan di bawah gambar */
+        .caption { 
+            padding: 15px; 
+            font-size: 1.2em; 
+            font-weight: bold; 
+            color: #333;
+            background-color: #ffffff;
         }
     </style>
 </head>
 <body>
 
-    <div class="grid-container">
-        <img src="baru5.png" alt="1">
-        <img src="baru4.png" alt="2">
-        
-        <img src="baru2.png" alt="3">
-        <img src="baru.png" alt="4">
+    <header>
+  
+    </header>
 
-        <img src="" alt="5">
+    <div class="container">
+        
+        <div class="activity-card">
+            <img src="baru.png" alt="Suasana Belajar">
+            <div class="caption">"Mengukir prestasi, membumikan Al-Qur'an. Generasi muda Islami yang cerdas dan berakhlakul karimah."</div>
+        </div>
+
+        <div class="activity-card">
+            <img src="baru2.png" alt="Kegiatan Olahraga">
+            <div class="caption">"Lomba bukan sekadar mencari juara, tapi cara kita mencintai syiar Islam sejak dini."</div>
+        </div>
+
+ <div class="activity-card">
+            <img src="baru4.png" alt="Kegiatan Olahraga">
+            <div class="caption">"Kerja sama tim adalah kunci kemenangan. Di lapangan kita kawan, di pertandingan kita berjuang!"</div>
+        </div>
+
+ <div class="activity-card">
+            <img src="baru5.png" alt="Kegiatan Olahraga">
+            <div class="caption">"Menjaga kebugaran tubuh dengan semangat sportivitas yang tinggi di lapangan futsal sekolah."</div>
+        </div>
+
     </div>
+
+    <footer style="text-align: center; padding: 20px; color: #666;">
+        <p>&copy; 2026 Kegiatan Sekolah</p>
+    </footer>
 
 </body>
 </html>
