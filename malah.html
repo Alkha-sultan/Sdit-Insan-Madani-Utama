@@ -3,114 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimalist Aesthetic - Adelard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <title>Program Unggulan Sekolah</title>
     <style>
-        * {
+        /* Gaya Dasar */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #f4f7f6;
+            color: #333;
         }
 
-        body {
-            /* Background gradasi estetik */
-            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        /* Container utama dengan efek kaca */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(15px); /* Efek blur di belakang kartu */
-            -webkit-backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 30px;
-            padding: 20px;
-            width: 90%;
-            max-width: 450px;
-            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
             text-align: center;
-            transition: all 0.4s ease;
         }
 
-        .glass-card:hover {
-            transform: scale(1.02);
-            background: rgba(255, 255, 255, 0.25);
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
         }
 
-        /* Foto dengan lengkungan halus */
-        .glass-card img {
+        /* Gaya Card Program */
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
             width: 100%;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            height: 200px;
+            object-fit: cover;
         }
 
-        /* Judul menggunakan font serif elegan */
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            color: #444;
-            margin-bottom: 10px;
-            font-style: italic;
+        .card-content {
+            padding: 1.5rem;
         }
 
-        /* Garis pemisah tipis */
-        .divider {
-            width: 40px;
-            height: 2px;
-            background: #fff;
-            margin: 15px auto;
-            opacity: 0.6;
+        .card-content h3 {
+            margin-top: 0;
+            color: #2c3e50;
         }
 
-        /* Teks deskripsi */
-        p {
+        .card-content p {
+            line-height: 1.6;
             font-size: 0.95rem;
-            line-height: 1.8;
-            color: #555;
-            padding: 0 15px 15px;
-            font-weight: 300;
         }
 
-        /* Ikon pemanis (opsional) */
-        .leaf-icon {
-            font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 5px;
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #2c3e50;
+            color: white;
+            margin-top: 3rem;
         }
     </style>
 </head>
 <body>
 
-    <div class="glass-card">
-        <img src="pg.png" alt="Aesthetic Nature">
-        
-        <div class="leaf-icon">🍃</div>
-        <h1>Quran Camp</h1>
-        <div class="divider"></div>
-        <p>
-          Mendekap Cahaya Al-Qur'an di Alam Terbuka."
-          "Quran Camp bukan sekadar menghafal, tapi tentang meresapi setiap ayat
- di tengah ketenangan alam. Menjadikan Al-Qur'an sebagai sahabat setia dan kompas dalam kehidupan
-        </p>
-    </div>
+<header>
+    <h1>Program Unggulan Sekolah Kita</h1>
+    <p>Membentuk Generasi Cerdas dan Berakhlak Mulia</p>
+</header>
 
-       <div class="glass-card">
-        <img src="pg2.png" alt="Aesthetic Nature">
-        
-        <div class="leaf-icon">🍃</div>
-        <h1>Mabid</h1>
-        <div class="divider"></div>
-        <p>
-   "Menjemput Berkah di Sepertiga Malam."
-"Melalui program Mabit, kami belajar disiplin dalam beribadah, mulai dari tadarus bersama hingga syahdunya shalat Tahajjud berjamaah. Menghidupkan malam dengan doa dan ilmu."
-        </p>
+<div class="container">
+    <div class="program-grid">
+
+        <div class="card">
+            <img src="pg2.png" alt="quran camp">
+            <div class="card-content">
+                <h3>quran camp</h3>
+                <p> Mendekap Cahaya Al-Qur'an di Alam Terbuka."
+          "Quran Camp bukan sekadar menghafal, tapi tentang meresapi setiap ayat
+ di tengah ketenangan alam. Menjadikan Al-Qur'an sebagai sahabat setia dan kompas dalam kehidupan</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="pg.png" alt="mabid">
+            <div class="card-content">
+                <h3>mabid</h3>
+                <p> "Menjemput Berkah di Sepertiga Malam."
+"Melalui program Mabit, kami belajar disiplin dalam beribadah, mulai dari tadarus bersama hingga syahdunya shalat Tahajjud berjamaah. Menghidupkan malam dengan doa dan ilmu.".</p>
+            </div>
+        </div>
+
     </div>
+</div>
 
 </body>
 </html>
